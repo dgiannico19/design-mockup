@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+:root {
+  --header: #f5f5f5;
+  --headerText: #666666;
+  --container: #ffffff;
+  --activeInput: #88c9f6;
+  --disabledInput: #9797984d;
+  --btnBack: #979798;
+  --btnCont: #0795fa;
+}
+
+html,
+body {
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 1920px;
+  height: 1080px;
+  background-color: #e4e4e4;
+}
+
+/* Estilos contenedor General */
+.container {
+  background-color: var(--container);
+  padding: 0 0 10px 0;
+  margin: 10% auto;
+  width: 597px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px 2px rgba(191, 189, 189, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(191, 189, 189, 0.75);
+  -moz-box-shadow: 0px 0px 5px 2px rgba(191, 189, 189, 0.75);
+}
+
+/* Estilos Header */
+.container-header {
+  border-radius: 4px;
+  padding: 25px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  color: var(--headerText);
+  background-color: var(--header);
+}
+
+/* Estilos pagos */
+.payment-method {
+  margin: 35px;
+}
+.payment-check-head {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.payment-check-head label {
+  margin-left: 10px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--headerText);
+}
+.payment-check-head label p {
+  width: 80%;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--headerText);
+}
+
+/* Estilos formulario */
+
+.formulario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Noto Sans', sans-serif;
+  color: var(--container);
+  margin: 25px 31px;
+}
+
+.formulario form .inputShort {
+  padding: 12px 21px;
+  border-radius: 5px;
+  width: 70px;
+  margin-right: 22px;
+  margin-bottom: 20px;
+  background: url(img/ic_keyboard_arrow_down_black_24px.svg);
+  background-repeat: no-repeat;
+  background-position-x: 80px;
+  background-position-y: center;
+}
+
+.tripleInput {
+  display: flex;
+}
+
+.formulario form .inputMed {
+  background: url(img/ic_help_outline_black_24px.svg);
+  background-repeat: no-repeat;
+  background-position-x: 219px;
+  background-position-y: center;
+  padding: 12px 21px;
+  border-radius: 5px;
+  width: 210px;
+  margin-bottom: 20px;
+}
+
+.formulario form .inputLarge {
+  padding: 12px 25px;
+  border-radius: 5px;
+  width: 479px;
+  margin-bottom: 20px;
+}
+
+/* Estilos Input de Formulario  */
+input[type='text'] {
+  border: 3px solid var(--activeInput);
+}
+input[type='text']:disabled {
+  border: 2px solid var(--disabledInput);
+}
+::placeholder {
+  color: var(--disabledInput);
+  font-weight: bold;
+}
+
+/* Estilos de los botones - BACK / CONTINUE */
+.botonera {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.botonera button {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.btn-back {
+  padding: 12px 52px;
+  background-color: var(--container);
+  border: 2px solid var(--btnBack);
+}
+.btn-continue {
+  opacity: 0.4;
+  padding: 12px 40px;
+  background-color: var(--btnCont);
+  color: var(--container);
+  border: none;
+}
